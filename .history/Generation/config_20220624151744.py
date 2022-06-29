@@ -49,7 +49,7 @@ data_root_h5 = root+"/lirh/pointcloud2/dataset/Generation/H5/"
 parser = argparse.ArgumentParser()
 parser.add_argument('--phase', type=str, default='train', help='train or test ?')
 parser.add_argument('--workers', type=int, default=0, help='number of data loading workers')
-parser.add_argument('--bs', type=int, default=64, help='input batch size [default: 30]')
+parser.add_argument('--bs', type=int, default=16, help='input batch size [default: 30]')
 parser.add_argument('--np', type=int, default=2048, help='Point Number [256/512/1024/2048] [default: 1024]')
 parser.add_argument('--nk',type=int, default=20,help = 'number of the knn graph point')
 parser.add_argument('--lr_g', type=float, default=0.0001, help='Initial learning rate [default: 0.0001]')
